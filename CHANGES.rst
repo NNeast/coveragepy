@@ -23,9 +23,6 @@ Unreleased
 - Coverage will create directories as needed for the data file if they don't
   exist, closing `issue 721`_.
 
-- Coverage commands no longer clobber the first entry in sys.path, fixing
-  `issue 715`_.
-
 - Improvements to context support:
 
   - The "no such table: meta" error is fixed.: `issue 716`_.
@@ -33,7 +30,6 @@ Unreleased
   - Combining data files now goes much faster.
 
 .. _issue 695: https://github.com/nedbat/coveragepy/issues/695
-.. _issue 715: https://github.com/nedbat/coveragepy/issues/715
 .. _issue 716: https://github.com/nedbat/coveragepy/issues/716
 .. _issue 721: https://github.com/nedbat/coveragepy/issues/721
 
