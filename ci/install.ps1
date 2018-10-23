@@ -135,7 +135,7 @@ function InstallPython ($python_version, $architecture, $python_home) {
 
 
 function InstallPythonEXE ($exepath, $python_home, $install_log) {
-    $install_args = "/passive InstallAllUsers=1 TargetDir=$python_home Include_doc=0 Include_test=0"
+    $install_args = "/passive InstallAllUsers=0 TargetDir=$python_home Include_doc=0 Include_test=0"
     RunCommand $exepath $install_args
     Get-ChildItem -Path C:\
     Get-ChildItem -Path $python_home
