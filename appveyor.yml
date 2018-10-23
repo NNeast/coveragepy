@@ -17,45 +17,45 @@ environment:
   PYTEST_ADDOPTS: "-n 0"
 
   matrix:
-    - JOB: "2.7 32-bit"
-      TOXENV: "py27"
-      PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.15"
-      PYTHON_ARCH: "32"
-
-    - JOB: "2.7 64-bit"
-      TOXENV: "py27"
-      PYTHON: "C:\\Python27-x64"
-      PYTHON_VERSION: "2.7.15"
-      PYTHON_ARCH: "64"
-
-    - JOB: "3.4 32-bit"
-      TOXENV: "py34"
-      PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.4"
-      PYTHON_ARCH: "32"
-
-    - JOB: "3.4 64-bit"
-      TOXENV: "py34"
-      PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.4"
-      PYTHON_ARCH: "64"
-
-    - JOB: "3.5 32-bit"
-      TOXENV: "py35"
-      PYTHON: "C:\\Python35"
-      PYTHON_VERSION: "3.5.4"
-      PYTHON_ARCH: "32"
-
-    - JOB: "3.5 64-bit"
-      TOXENV: "py35"
-      PYTHON: "C:\\Python35-x64"
-      PYTHON_VERSION: "3.5.4"
-      PYTHON_ARCH: "64"
+    #- JOB: "2.7 32-bit"
+    #  TOXENV: "py27"
+    #  PYTHON: "C:\\Python27"
+    #  PYTHON_VERSION: "2.7.15"
+    #  PYTHON_ARCH: "32"
+    #
+    #- JOB: "2.7 64-bit"
+    #  TOXENV: "py27"
+    #  PYTHON: "C:\\Python27-x64"
+    #  PYTHON_VERSION: "2.7.15"
+    #  PYTHON_ARCH: "64"
+    #
+    #- JOB: "3.4 32-bit"
+    #  TOXENV: "py34"
+    #  PYTHON: "C:\\Python34"
+    #  PYTHON_VERSION: "3.4.4"
+    #  PYTHON_ARCH: "32"
+    #
+    #- JOB: "3.4 64-bit"
+    #  TOXENV: "py34"
+    #  PYTHON: "C:\\Python34-x64"
+    #  PYTHON_VERSION: "3.4.4"
+    #  PYTHON_ARCH: "64"
+    #
+    #- JOB: "3.5 32-bit"
+    #  TOXENV: "py35"
+    #  PYTHON: "C:\\Python35"
+    #  PYTHON_VERSION: "3.5.4"
+    #  PYTHON_ARCH: "32"
+    #
+    #- JOB: "3.5 64-bit"
+    #  TOXENV: "py35"
+    #  PYTHON: "C:\\Python35-x64"
+    #  PYTHON_VERSION: "3.5.4"
+    #  PYTHON_ARCH: "64"
 
     - JOB: "3.6 32-bit"
       TOXENV: "py36"
-      PYTHON: "C:\\Python36"
+      PYTHON: "C:\\Python36-7"
       PYTHON_VERSION: "3.6.7"
       PYTHON_ARCH: "32"
 
@@ -67,7 +67,7 @@ environment:
 
     - JOB: "3.7 32-bit"
       TOXENV: "py37"
-      PYTHON: "C:\\Python37"
+      PYTHON: "C:\\Python37-1"
       PYTHON_VERSION: "3.7.1"
       PYTHON_ARCH: "32"
 
@@ -78,19 +78,19 @@ environment:
       PYTHON_ARCH: "64"
 
     # Meta coverage
-    - JOB: "Meta 2.7"
-      TOXENV: "py27"
-      PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.15"
-      PYTHON_ARCH: "32"
-      COVERAGE_COVERAGE: "yes"
-
-    - JOB: "Meta 3.6"
-      TOXENV: "py36"
-      PYTHON: "C:\\Python36"
-      PYTHON_VERSION: "3.6.7"
-      PYTHON_ARCH: "32"
-      COVERAGE_COVERAGE: "yes"
+    #- JOB: "Meta 2.7"
+    #  TOXENV: "py27"
+    #  PYTHON: "C:\\Python27"
+    #  PYTHON_VERSION: "2.7.15"
+    #  PYTHON_ARCH: "32"
+    #  COVERAGE_COVERAGE: "yes"
+    #
+    #- JOB: "Meta 3.6"
+    #  TOXENV: "py36"
+    #  PYTHON: "C:\\Python36"
+    #  PYTHON_VERSION: "3.6.7"
+    #  PYTHON_ARCH: "32"
+    #  COVERAGE_COVERAGE: "yes"
 
 init:
   - "ECHO %TOXENV%"
